@@ -1,36 +1,22 @@
-# Saigon Authentic Hostel & Tours — Website V1
+# Saigon Authentic Hostel & Tours Website
 
-Production website source for **saigonauthentichostel.com**.
+Static multi-page website for https://www.saigonauthentichostel.com.
 
-## Stack
-- HTML
-- CSS
-- Vanilla JavaScript
-- WhatsApp direct booking flow
-- Vercel-ready
+## Workflow
+- `development`: changes and testing
+- Pull Request → `main`
+- Vercel automatically deploys `main` to production
 
-## Booking flow
-All booking and room enquiries go to WhatsApp **+84 971 978 439**. The site asks only for check-in, check-out, guests and interest, then opens WhatsApp with a pre-written message.
+## Pages
+- Home
+- Rooms
+- Hostel Life
+- Experiences
+- Location
+- Reviews
 
-## Branch workflow
-- `main` = production
-- `development` = future development work
-- use feature/release branches for changes before merging to `main`
+## Booking
+All direct booking enquiries go through WhatsApp. The central WhatsApp number is defined in `assets/js/main.js`.
 
-## Main files
-- `index.html` — homepage, SEO and content
-- `assets/css/styles.css` — responsive design system
-- `assets/js/main.js` — WhatsApp booking + mobile navigation
-- `data/site.json` — business details and ratings
-- `robots.txt` and `sitemap.xml` — SEO basics
-- `vercel.json` — Vercel deployment/security headers
-
-## Current V1 image hosting
-V1 references the verified project image assets already deployed on Vercel so the website can ship immediately. A later V1.1 can move all image files into this repository without changing the page structure.
-
-## Deployment
-Import this repository into Vercel, set `main` as Production Branch, then add:
-- `saigonauthentichostel.com`
-- `www.saigonauthentichostel.com`
-
-The domain is registered at GoDaddy, so DNS records should be updated there only after Vercel confirms the required records.
+## Assets
+Property photography is stored locally under `assets/images/` as WebP. Platform logos are local SVG files in `assets/logos/`.
